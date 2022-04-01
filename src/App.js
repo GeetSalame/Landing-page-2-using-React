@@ -1,4 +1,6 @@
+import Connect from "./components/Connect";
 import Header from "./components/Header";
+import Projects from "./components/Projects";
 import Services from "./components/Services";
 
 function App() {
@@ -6,6 +8,8 @@ function App() {
     <div className="App">
       <Header/>
       <Services/>
+      <Projects/>
+      <Connect/>
     </div>
   );
 }
