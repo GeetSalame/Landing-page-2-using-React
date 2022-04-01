@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bebas+Neue&family=Montserrat:wght@300&family=Noto+Sans+JP:wght@100&family=Noto+Sans+KR:wght@700;900&family=Poppins:wght@300&family=Roboto&display=swap');
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -9,11 +11,13 @@
   --theme-transparency : rgba(132, 0, 255, 0.07);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -24,7 +28,7 @@ code {
 }
 
 #header{
-  height: 100vh;
+  height: 90vh;
 }
 
 #navbar{
@@ -104,4 +108,63 @@ a{
 
 .hometext a{
   width: fit-content;
+}
+
+#sbox{
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  height: 270px;
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+#sbox img{
+  height: 150px;
+  object-fit: contain;
+  padding: 5% 10%;
+}
+
+#sbox h2{
+  text-align: center;
+  margin: 5px 0 10px;
+}
+
+#sbox p{
+  text-align: center;
+  margin: 5px;
+  font-size: .8rem;
+}
+
+#services{
+  /* border: 2px solid red; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--theme-transparency);
+}
+
+.services-boxes{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-text{
+  width: 40%;
+  padding-right: 120px;
+}
+
+.services-text h1{
+  font-weight: bold;
+  margin: 10px 0; 
+}
+.services-text p{
+  margin: 10px 0 20px; 
 }
