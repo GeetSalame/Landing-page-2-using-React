@@ -285,3 +285,231 @@ li a:hover{
   transform: scale(1.1);
   -webkit-box-reflect: below 1px linear-gradient(transparent, var(--theme-transparency));
 }
+
+
+/* --------------Responsiveness---------- */
+@media screen and (max-width : 1000px) {
+  .homepage{
+    flex-direction: column;
+    padding: 5%;
+  }
+  
+  .hometext{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hometext h1{
+    font-size: 2.5rem;
+    margin: auto;
+    margin: 2% 0;
+    line-height: 3rem;
+    text-align: center;
+  }
+  
+  .hometext p{
+  }
+  
+  .hometext a{
+  }
+  .homeimg img{
+    height: 25rem;
+    margin: 10% 0;
+  }
+  
+  
+  #services{
+    flex-direction: column;
+    padding: 5% 0;
+  }
+  .services-boxes{
+    width: 90%;
+  }
+  #sbox{
+    height: 210px;
+    width: 190px;
+    margin: 10px;
+    padding: 10px;
+  }
+  #sbox img{
+    height: 100px;
+    object-fit: contain;
+    padding: 1% 10%;
+  }
+  
+  #sbox h2{
+    text-align: center;
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  #sbox p{
+    text-align: center;
+    margin: 1px;
+    font-size: .65rem;
+  }
+  #sbox:nth-child(2n){
+    transform: translate(0, -1rem);
+  }
+  #sbox:nth-child(2n+1){
+    transform: translate(0, 1rem);
+  }
+  .services-text{
+    width: auto;
+    margin: auto;
+    text-align: center;
+    padding: 0 15%;
+  }
+  
+  .services-text h1{
+    font-weight: bold;
+    margin: 20px 0 10px; 
+  }
+  
+  #projects{
+  }
+  #head{
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  #left{
+    width: 100%;
+    text-align: center;
+  }
+  #left h2{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  #left span{
+    color: var(--theme-pri);
+    font-size: 3rem;
+  }
+  #right{
+    width: 100%;
+  }
+  #right img{
+    height: 300px;
+  }
+  #bottom{
+    padding: 0 10%;
+  }
+  #bottom img{
+    height: 2rem;
+  }
+  
+}
+
+@media screen and (max-width : 470px) {
+  #header{
+    min-height : fit-content;
+  }
+  .homepage{
+    padding: 10% 10%;
+  }
+  
+  .hometext{
+    text-align: center;
+    padding: 0 2%;
+  }
+  
+  .hometext h1{
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  
+  .hometext a{
+  }
+  .homeimg img{
+    height: 20rem;
+  }
+  #sbox{
+    height: 210px;
+    width: 180px;
+  }
+  
+  #sbox img{
+    height: 100px;
+    padding: 5%;
+  }
+  
+  #sbox h2{
+  }
+  
+  #sbox p{
+    margin: 3px;
+    font-size: .6rem;
+  }
+  #sbox:nth-child(n){
+    transform: translate(0);
+  }
+  
+  #services{
+    padding: 3%;
+    flex-direction: column-reverse;
+  }
+  
+  .services-boxes{
+    width: 100%;
+  }
+  
+  
+  .services-text{
+    width: 100%;
+    margin: 5% 0 10%;
+  }
+  
+  .services-text h1{
+    margin: 10px 0; 
+  }
+  .services-text p{
+  }
+  
+  #projects{
+    padding: 5%;
+  }
+  #head{
+    min-height: 90%;
+  }
+  #left{
+    width: fit-content;
+    text-align: center;
+    /* padding: 5%; */
+  }
+  #left h2{
+    font-size: 2rem;
+    margin: 2% 0;
+    line-height: 2rem;
+  }
+  #left span{
+  }
+  #right{
+    width: 100%;
+  }
+  #right img{
+    height: 150px;
+  }
+  #bottom{
+    min-height: fit-content;
+    padding: 0 10%;
+  }
+  #bottom img{
+    /* border: 2px solid red; */
+    height: 1rem;
+    margin: 0 5%;
+  }
+  #connect{
+  }
+  #connect h2{
+    font-size: .8rem;
+  }
+  .socialmedia{
+  }
+  .socialmedia img{
+    height: 1rem;
+    margin: 0 1em;
+  }
+}
